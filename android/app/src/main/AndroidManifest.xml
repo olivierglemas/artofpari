@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ionicthemes.ionic4fullapp">
+    package="com.gleminfo.artofpari">
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,7 @@
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
-            android:name="com.ionicthemes.ionic4fullapp.MainActivity"
+            android:name="com.gleminfo.artofpari.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBarLaunch"
             android:launchMode="singleTask">

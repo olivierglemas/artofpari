@@ -10,6 +10,7 @@ const routes: Routes = [
   // tslint:disable-next-line:max-line-length
   { path: 'auth/forgot-password', loadChildren: () => import('./forgot-password/forgot-password.module').then(m => m.ForgotPasswordPageModule) },
   { path: 'app', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule) },
+  //{ path: 'app/competitions/matchs', loadChildren: () => import('./tabsCompetitions/tabsCompetitions.module').then(m => m.TabsCompetitionsPageModule) },
   { path: 'contact-card', loadChildren: () => import('./contact-card/contact-card.module').then(m => m.ContactCardPageModule) },
   // tslint:disable-next-line:max-line-length
   { path: 'forms-and-validations', loadChildren: () => import('./forms/validations/forms-validations.module').then(m => m.FormsValidationsPageModule) },

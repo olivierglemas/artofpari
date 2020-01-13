@@ -15,8 +15,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 export class AppComponent {
   appPages = [
     {
-      title: 'Categories',
-      url: '/app/categories',
+      title: 'Compétitions',
+      url: '/app/competitions',
       icon: './assets/sample-icons/side-menu/categories.svg'
     },
     {

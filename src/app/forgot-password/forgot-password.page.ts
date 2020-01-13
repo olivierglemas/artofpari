@@ -39,7 +39,7 @@ export class ForgotPasswordPage implements OnInit {
 
   recoverPassword(): void {
     console.log(this.forgotPasswordForm.value);
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/competitions']);
   }
 
 }

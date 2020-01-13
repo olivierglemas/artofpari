@@ -6,8 +6,6 @@ import { delay, finalize, tap, map, filter, concatMap } from 'rxjs/operators';
 // tslint:disable-next-line:max-line-length
 import { ShowcaseShellModel, ShowcasePostModel, ShowcaseCommentModel, ShowcaseCombinedTaskUserModel, ShowcaseUser2Model, ShowcaseTaskModel, ShowcaseShellUserModel, ShowcaseCompanyModel } from './showcase-shell.model';
 import { DataStore, ShellModel } from '../shell/data-store';
-import { TravelListingModel } from '../travel/listing/travel-listing.model';
-import { FashionListingModel } from '../fashion/listing/fashion-listing.model';
 
 @Injectable()
 export class ShowcaseService {
@@ -58,13 +56,6 @@ export class ShowcaseService {
     );
   }
 
-  public getMultipleDataSourceA(): Observable<TravelListingModel> {
-    return this.http.get<TravelListingModel>('./assets/sample-data/travel/listing.json');
-  }
-
-  public getMultipleDataSourceB(): Observable<FashionListingModel> {
-      return this.http.get<FashionListingModel>('./assets/sample-data/fashion/listing.json');
-  }
 
   public getDependantDataSourcePost(): Observable<ShowcasePostModel> {
     return this.http.get<any>('https://jsonplaceholder.typicode.com/posts/1');

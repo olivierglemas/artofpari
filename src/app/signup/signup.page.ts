@@ -79,21 +79,21 @@ export class SignupPage implements OnInit {
 
   doSignup(): void {
     console.log('do sign up');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/competitions']);
   }
 
   doFacebookSignup(): void {
     console.log('facebook signup');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/competitions']);
   }
 
   doGoogleSignup(): void {
     console.log('google signup');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/competitions']);
   }
 
   doTwitterSignup(): void {
     console.log('twitter signup');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/competitions']);
   }
 }

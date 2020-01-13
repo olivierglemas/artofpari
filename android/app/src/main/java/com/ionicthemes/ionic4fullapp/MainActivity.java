@@ -1,4 +1,4 @@
-package com.ionicthemes.ionic4fullapp;
+package com.gleminfo.artofpari;
 
 import android.os.Bundle;
 
