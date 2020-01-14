@@ -16,12 +16,12 @@ export class AppComponent {
   appPages = [
     {
       title: 'Compétitions',
-      url: '/app/competitions',
+      url: '/competitions',
       icon: './assets/sample-icons/side-menu/categories.svg'
     },
     {
       title: 'Profile',
-      url: '/app/user',
+      url: '/user',
       icon: './assets/sample-icons/side-menu/profile.svg'
     },
     {
@@ -31,7 +31,7 @@ export class AppComponent {
     },
     {
       title: 'Notifications',
-      url: '/app/notifications',
+      url: '/notifications',
       icon: './assets/sample-icons/side-menu/notifications.svg'
     }
   ];

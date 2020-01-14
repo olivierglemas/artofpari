@@ -9,6 +9,24 @@ const routes: Routes = [
     path: '',
     component: TabsCompetitionPage,
     children: [
+      
+      {
+        path: 'matchs',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../competitions/competitions.module').then(m => m.CompetitionsPageModule)
+          },
+          {
+            path: 'matchs',
+            loadChildren: () => import('../matchs/listing/match-listing.module').then(m => m.MatchListingPageModule)
+          },
+          {
+            path: 'matchs/:productId',
+            loadChildren: () => import('../matchs/details/match-details.module').then(m => m.MatchDetailsPageModule)
+          }
+        ]
+      },
       {
         path: 'classement',
         children: [
@@ -27,16 +45,7 @@ const routes: Routes = [
             loadChildren: () => import('../agora/listing/agora-listing.module').then(m => m.AgoraListingPageModule)
           }
         ]
-      },
-      {
-        path: 'notifications',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../notifications/notifications.module').then(m => m.NotificationsPageModule)
-          }
-        ]
-      },
+      }
     ]
   },
   // /app/ redirect

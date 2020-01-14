@@ -10,7 +10,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'competitions',
+        path: 'matchs',
         children: [
           {
             path: '',
@@ -27,24 +27,20 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'user',
+        path: 'classement',
         children: [
           {
             path: '',
-            loadChildren: () => import('../user/profile/user-profile.module').then(m => m.UserProfilePageModule)
-          },
-          {
-            path: 'friends',
-            loadChildren: () => import('../user/friends/user-friends.module').then(m => m.UserFriendsPageModule)
+            loadChildren: () => import('../classement/listing/classement-listing.module').then(m => m.ClassementListingPageModule)
           }
         ]
       },
       {
-        path: 'notifications',
+        path: 'agora',
         children: [
           {
             path: '',
-            loadChildren: () => import('../notifications/notifications.module').then(m => m.NotificationsPageModule)
+            loadChildren: () => import('../agora/listing/agora-listing.module').then(m => m.AgoraListingPageModule)
           }
         ]
       },

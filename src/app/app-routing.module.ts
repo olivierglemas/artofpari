@@ -10,8 +10,12 @@ const routes: Routes = [
   // tslint:disable-next-line:max-line-length
   { path: 'auth/forgot-password', loadChildren: () => import('./forgot-password/forgot-password.module').then(m => m.ForgotPasswordPageModule) },
   { path: 'app', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule) },
-  //{ path: 'app/competitions/matchs', loadChildren: () => import('./tabsCompetitions/tabsCompetitions.module').then(m => m.TabsCompetitionsPageModule) },
+  //{ path: 'app', loadChildren: () => import('./tabsCompetition/tabsCompetition.module').then(m => m.TabsCompetitionPageModule) },
   { path: 'contact-card', loadChildren: () => import('./contact-card/contact-card.module').then(m => m.ContactCardPageModule) },
+  { path: 'notifications', loadChildren: () => import('./notifications/notifications.module').then(m => m.NotificationsPageModule) },
+  { path: 'competitions', loadChildren: () => import('./competitions/competitions.module').then(m => m.CompetitionsPageModule) },
+  { path: 'user', loadChildren: () => import('./user/profile/user-profile.module').then(m => m.UserProfilePageModule) },
+ 
   // tslint:disable-next-line:max-line-length
   { path: 'forms-and-validations', loadChildren: () => import('./forms/validations/forms-validations.module').then(m => m.FormsValidationsPageModule) },
   { path: 'forms-filters', loadChildren: () => import('./forms/filters/forms-filters.module').then(m => m.FormsFiltersPageModule) },
